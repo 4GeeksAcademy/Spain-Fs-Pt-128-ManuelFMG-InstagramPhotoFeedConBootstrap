@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="/instagram.png" type="image/png">
+</head>
+
+<body>
+  <!-----------Aquí comienza el "NAVBAR"--------------->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex" role="search">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create New Post
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close "></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Caption:</h6>
+                  <textarea class="form-control" placeholder="Add the caption of your post here"
+                    id="floatingTextarea"></textarea>
+                  <br>
+                  <button type="button" class="btn btn-light">
+                    <i class="fa-solid fa-camera"></i>
+                  </button>
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle ms-2" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-----------Aquí termina el "NAVBAR" y la siguiente etiqueta es su cierre --------------->
+  </nav>
+  <!-----------Aquí comienza el "TABS"--------------->
+  <div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+      <!-- Pestaña 1 -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/34212963/pexels-photo-34212963.jpeg" alt=""><!--Imagen 1 Superior-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/89724/pexels-photo-89724.jpeg" alt=""><!--Imagen 2 Superior-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt=""><!--Imagen 3 Superior-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg" alt=""><!--Imagen 1 Centro-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/30992413/pexels-photo-30992413.jpeg" alt=""><!--Imagen 2 Centro-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg" alt=""><!--Imagen 3 Centro-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg" alt=""><!--Imagen 1 Inferior-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg" alt=""><!--Imagen 2 Inferior-->
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2">
+              <div class="ratio ratio-1x1">
+                <img class="w-100 h-100 object-fit-cover"
+                  src="https://images.pexels.com/photos/34586056/pexels-photo-34586056.jpeg" alt=""><!--Imagen 3 Inferior-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pestaña 2 -->
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="card mx-auto" style="width: 30rem; margin-block-end: 10px;">
+          <div class="card-header">
+            <h4>Primer Mes</h4>
+            <span class="date">09/25</span>
+          </div>
+          <img src="https://images.pexels.com/photos/34212963/pexels-photo-34212963.jpeg" alt=""><!--Imagen 1 Card-->
+          <div class="card-body">
+            <p class="card-text"><strong>100 Likes</strong>
+              <br>
+              En el primer mes comencé tomando apuntes y asistiendo a clases de la academia.
+            </p>
+          </div>
+        </div>
+        <div class="card mx-auto" style="width: 30rem; margin-block-end: 10px;">
+          <div class="card-header">
+            <h4>Segundo Mes</h4>
+            <span class="date">10/25</span>
+          </div>
+          <img src="https://images.pexels.com/photos/89724/pexels-photo-89724.jpeg" alt=""><!--Imagen 2 Card-->
+          <div class="card-body">
+            <p class="card-text"><strong>268 Likes</strong>
+              <br>
+              En el segundo mes empece a hacer pruebas con html y css en Visual Studio Code.
+            </p>
+          </div>
+        </div>
+        <div class="card mx-auto" style="width: 30rem; margin-block-end: 10px;">
+          <div class="card-header">
+            <h4>Tercer Mes</h4>
+            <span class="date">11/25</span>
+          </div>
+          <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt=""><!--Imagen 3 Card-->
+          <div class="card-body">
+            <p class="card-text"><strong>562 Likes</strong><br>
+              Y por último en el tercer mes comencé a programar con JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------Aquí termina el "TABS"--------------->
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <div>
+  </div>
+</body>
+
+</html>
